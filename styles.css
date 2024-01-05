@@ -1,0 +1,152 @@
+body{
+    font-family: 'Barlow Semi Condensed';
+    margin: 0;
+    height: 100%;
+  }
+  
+  .container{
+    width: 96%;
+    background: hsl(210, 46%, 95%);
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: " Daniel Daniel Jonathan Kira "
+                         " Jeanette Patrick Patrick Kira ";
+    
+  
+                         gap: 20px;
+   padding: 20px;
+   min-height: 100vh;
+  
+  }
+  img{
+    border-radius: 50%;
+    object-fit: contain;
+  }
+  .review{
+    color: white;
+    opacity: 70%;
+  }
+  
+  .Daniel, .Jeanette, .Jonathan, .Patrick, .Kira{
+    border-radius: 5px;
+    gap: 20px;
+    padding: 10px;
+    
+  }
+  
+  .name{
+    color: white;
+    
+  }
+  
+  .verify{
+    color: white;
+    opacity: 50%;
+  }
+  
+  .Daniel{
+    background: hsl(263, 55%, 52%);
+    grid-area: Daniel;
+   
+   
+  }
+  
+  .thick{
+    color: white;
+    font-weight: bold 600;
+    font-size: 20px;
+    position: relative;
+    
+  
+   
+  }
+  
+  .grey{
+    color: gray;
+    font-weight: bold;
+    font-size: 13px;
+  }
+  .Jonathan{
+    background-color: hsl(217, 19%, 35%);
+    grid-area: Jonathan;
+  
+  }
+  .Jeanette{
+    background: hsl(0, 0%, 100%);
+    grid-area: Jeanette;
+  
+  }
+  .Patrick{
+    background: hsl(219, 29%, 14%);
+    grid-area: Patrick;
+  
+  }
+  
+  .Kira{
+    background:hsl(0, 0%, 100%) ;
+    grid-area: Kira;
+  }
+  .other{
+    color: gray;
+  }
+  .new{
+    color: black;
+    opacity: 50%;
+  }
+  
+  .blak{
+    color:#4C4E52;
+    font-size: 20px;
+    font-weight: bold 600;
+  }
+  .picture{
+    display: flex;
+    gap:20px;
+    
+   
+  }
+  .pict{
+    display: flex;
+    gap:20px;
+  
+    align-items: center;
+    
+  }
+  
+  span{
+    display: block;
+    margin-top: 5px;
+    line-height: 1;
+  }
+  
+   .quote{
+  margin-bottom: -45px;
+  margin-left: auto;
+  margin-right: 80px;
+  
+  }   
+  
+  
+  
+  @media screen and (min-width: 270px) and (max-width:810px){
+  
+    .container{
+      display: flex;
+      flex-direction: column;
+    }
+    .quote{
+  
+  margin-right: 30px;
+  
+  }
+  
+  }
+  @media screen and (min-width:1380px){
+    .review, .other{
+      font-size: 22px;
+    }
+    .thick, .blak{
+     font-size:22px ;  
+    }
+  }
